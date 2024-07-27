@@ -2,6 +2,10 @@ import { Schema ,model } from "mongoose";
 import { User } from "./User.js";
 
 const transactionSchema = new Schema ({
+    title: {
+        type: String,
+        required: true,
+      },
     amount :{
         type: Number,
         required:true
@@ -15,9 +19,11 @@ const transactionSchema = new Schema ({
         enum:["Debit" ,"Credit"]
     },
     user:{
-        type:Schema.Types.ObjectId,
-        ref:"User"
-    }
+        type: Schema.Types.ObjectId,
+        ref: "User",
+      }
 },{timestamps:true})
 
 const Transaction = model("Transaction" , transactionSchema)
+
+export {Transaction}
