@@ -14,7 +14,7 @@ const dbConnection = async ()=>{
     const conn =await mongoose.connect(process.env.MONGO_URL)
 
 if(conn){
-    console.log("MongoDB connected 🎁🔗")
+    console.log("Database connected 🎁🔗")
 }
 else{
     console.log("Database not connected ⛓️‍💥❌")
