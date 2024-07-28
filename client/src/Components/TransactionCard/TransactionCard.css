@@ -1,0 +1,54 @@
+.transaction-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border :1px solid grey;
+}
+
+.transaction-date p{
+  padding-top: 15px;
+  font-size: 25px;
+  font-weight:500;
+}
+
+.transaction-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-amount p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.credit {
+  color: green;
+}
+
+.debit {
+  color: red;
+}
+
+.delete-button {
+  background: linear-gradient(90deg, #ff6b6b 0%, #c0392b 100%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.delete-button:hover {
+  background: #c0392b;
+}

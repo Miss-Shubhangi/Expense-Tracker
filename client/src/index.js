@@ -3,6 +3,7 @@ import {RouterProvider , createBrowserRouter} from 'react-router-dom'
 import Home from "./Views/Home/Home"
 import Signup from "./Views/SignUp/SignUp"
 import Login from "./Views/Login/Login"
+import AddTransaction from "./Views/AddTransaction/AddTransaction"
 import PageNotFound from './Views/PageNotFound/PageNotFound'
 import "./index.css"
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
     {
         path:"/login" ,
         element: <Login/>
+    },
+    {
+        path: '/add-transaction',
+        element: <AddTransaction />
     },
     {
         path:'*',

@@ -1,7 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import { postSignup, postLogin } from './controllers/user.js';
-import { postTransaction, getTransactions } from './controllers/transaction.js';
+import { postTransaction, getTransactions ,deleteTransaction } from './controllers/transaction.js';
 import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config();
@@ -27,6 +27,7 @@ app.post('/signup', postSignup);
 app.post('/login', postLogin);
 app.post('/transaction', postTransaction);
 app.get('/transactions', getTransactions);
+app.delete("/transaction/:id", deleteTransaction)
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

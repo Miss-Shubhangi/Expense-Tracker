@@ -1,0 +1,141 @@
+.header-container {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative; 
+    z-index: 1000;
+  }
+  
+  .home-greeting {
+    margin: 0;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .home-heading {
+    margin: 20px 0;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: 15px 0px;
+  }
+  
+  .home-logout {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff4b5c;
+    cursor: pointer;
+    font-weight: bold;
+
+  }
+  .add-button {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 90px;
+    text-decoration: none;
+  }
+  
+  .add-button:hover {
+    background-color: #182848;
+  }
+
+  .net-transactions-values {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .net-transactions-value-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 30px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .net-transactions-value-amount {
+    font-size: 33px;
+    font-weight: bold;
+  }
+  
+  .net-transactions-value-title{
+      font-size: 20px;
+  }
+
+  .net-transactions-value-amount.credit {
+    color: green;
+  }
+  
+  .net-transactions-value-amount.debit {
+    color: red;
+  }
+  
+  .net-transactions-value-amount.balance {
+    color: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .transactions-container {
+    margin: 20px 0;
+  }
+  
+  .add-transaction {
+    display: block;
+    margin: 20px auto;
+    width: 50px;
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .header-container {
+      padding: 15px;
+    }
+  
+    .home-greeting {
+      font-size: 1.2em;
+    }
+  
+    .home-heading {
+      font-size: 1em;
+    }
+  
+    .home-logout {
+      margin-top: 8px;
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-container {
+      padding: 10px;
+    }
+  
+    .home-greeting {
+      font-size: 1em;
+    }
+  
+    .home-heading {
+      font-size: 0.8em;
+    }
+  
+    .home-logout {
+      margin-top: 6px;
+      font-size: 0.8em;
+    }
+  }
+  
+
+  
