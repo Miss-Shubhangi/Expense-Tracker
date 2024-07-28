@@ -1,4 +1,4 @@
-import {User} from "../models/User.js";
+import { User } from "../models/User.js";
 
 const postSignup = async (req, res) => {
   const { fullName, email, password, dob } = req.body;
@@ -12,22 +12,19 @@ const postSignup = async (req, res) => {
 
   try {
     const savedUser = await user.save();
-
     res.json({
       success: true,
-      message: `Signup successful`,
+      message: 'Signup successful',
       data: savedUser
-    })
-  }
-  catch (e) {
+    });
+  } catch (e) {
     res.json({
       success: false,
       message: e.message,
       data: null
-    })
+    });
   }
-}
-
+};
 
 const postLogin = async (req, res) => {
   const { email, password } = req.body;
@@ -42,15 +39,14 @@ const postLogin = async (req, res) => {
       success: true,
       message: "Login successful",
       data: user
-    })
-  }
-  else {
+    });
+  } else {
     return res.json({
       success: false,
       message: "Invalid credentials",
       data: null
-    })
+    });
   }
 }
 
-export { postSignup, postLogin }
+export { postSignup, postLogin };
