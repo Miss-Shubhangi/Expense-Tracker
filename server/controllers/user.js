@@ -49,4 +49,4 @@ const postLogin = async (req, res) => {
   }
 }
 
-export { postSignup, postLogin };
+export { postSignup,postLogin};
